@@ -1,0 +1,77 @@
+/* container */
+#map-container {
+    height: 800px;
+    position: relative;
+}
+
+/* controller */
+#map-container > .controller {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+    display: inline-block;
+    float: right;
+}
+#map-container > .controller > a {
+    position: relative;
+    background: url('../img/portlet-tray.png') no-repeat;
+    transition: all 0.1s linear 0s;
+    display: inline-block;
+    outline: none;
+    height: 10px;
+    top: -5px;
+}
+#map-container > .controller > a.reload {
+    background-position: -37px -38px;
+    width: 12px;
+}
+#map-container > .controller > a.remove {
+    background-position: -66px -38px;
+    width: 10px;
+}
+
+/* map */
+#map-container > #map {
+    height: 100%;
+}
+#map-container > #map .jvectormap-zoomin,
+#map-container > #map .jvectormap-zoomout {
+    background-color: #30b1f9;
+    padding: 8px 10px;
+    height: auto;
+    width: auto;
+}
+#map-container > #map .jvectormap-zoomin {
+    bottom: 15px;
+    top: auto;
+}
+#map-container > #map .jvectormap-zoomout {
+    bottom: 15px;
+    left: 35px;
+    top: auto;
+}
+
+/* spinner */
+.loading-animator {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -webkit-animation: pace-spinner 400ms linear infinite;
+    -moz-animation: pace-spinner 400ms linear infinite;
+    -ms-animation: pace-spinner 400ms linear infinite;
+    -o-animation: pace-spinner 400ms linear infinite;
+    animation: pace-spinner 400ms linear infinite;
+    border-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0.4);
+    border-image: none;
+    border-radius: 10px 10px 10px 10px;
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    display: block;
+    height: 14px;
+    margin-left: 40%;
+    width: 14px;
+    z-index: 2000;
+}
