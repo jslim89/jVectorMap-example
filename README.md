@@ -2,6 +2,8 @@
 
 This is an example to shows how to use [jVectorMap](http://jvectormap.com/) and customize it's theme.
 
+**There is a** [demo](http://www.jslim89.com/jvectormap) **here.**
+
 ## 1. Download map
 
 You can download the maps from the following source:
